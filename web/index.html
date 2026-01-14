@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MinHashMesh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <p class="eyebrow">MinHash similarity</p>
+        <h1>MinHashMesh</h1>
+        <p>Estimate Jaccard similarity between two docs.</p>
+      </header>
+      <section class="panel">
+        <textarea id="docInput" rows="8" placeholder="Doc A...\n---\nDoc B..."></textarea>
+        <label>Hashes
+          <input id="hashInput" type="number" value="64" />
+        </label>
+        <button id="compareButton">Compare</button>
+      </section>
+      <section class="panel">
+        <h2>Similarity</h2>
+        <div id="results" class="results"></div>
+      </section>
+    </main>
+    <div class="mesh"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
