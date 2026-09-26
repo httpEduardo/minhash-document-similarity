@@ -1,11 +1,13 @@
-# MinHashMesh
+# Minhash Document Similarity
 
-MinHashMesh estimates Jaccard similarity between documents using MinHash signatures.
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
+
+Minhash Document Similarity estimates Jaccard similarity between documents using MinHash signatures.
 
 ## Quick start
 
 ```bash
-python -m app.server --port 5173
+python -m minhash_document_similarity.server --port 5173
 ```
 
 Open http://localhost:5173
